@@ -17,8 +17,6 @@ const postCSS = require('gulp-postcss');
 const babel = require('gulp-babel');
 // Minimize JS
 const uglify = require('gulp-uglify');
-// Minify images
-const imagemin = require('gulp-imagemin');
 // Show sizes of files in the terminal
 const size = require('gulp-size');
 // Remove comments from files for production
@@ -35,11 +33,9 @@ const paths = {
   devCSS: 'src/css',
   devSCSS: 'src/scss/*.scss',
   devJS: 'src/js/*.js',
-  devImages: 'src/images/*.{png,gif,jpg,jpeg,svg}',
   devFavicons: 'src/*.{ico,png,xml,svg,webmanifest}',
   prodCSS: 'dist/css',
   prodJS: 'dist/js',
-  prodImages: 'dist/images',
   normalize: 'src/css/normalize.css',
 };
 
@@ -125,14 +121,6 @@ function buildJS() {
     .pipe(dest(paths.prodJS));
 }
 
-// Minimize images
-function buildImages() {
-  return src(paths.devImages)
-    .pipe(imagemin())
-    .pipe(size({ showFiles: true }))
-    .pipe(dest(paths.prodImages));
-}
-
 // ************************* Exported Tasks *************************
 
 // Run gulp serve in the terminal to start development mode
@@ -147,7 +135,6 @@ exports.build = series(
     buildFavicon,
     buildCSS,
     buildNormalize,
-    buildJS,
-    buildImages
+    buildJS
   )
 );
