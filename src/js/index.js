@@ -2,29 +2,22 @@
 const upperBtn = document.querySelector('#upper-btn');
 const lowerBtn = document.querySelector('#lower-btn');
 const coreBtn = document.querySelector('#core-btn');
+const main = document.querySelector('#main');
 
-// Listen for button clicks then activate workout function
-upperBtn.addEventListener('click', () => {
-  getWorkout('upper');
-});
-
-lowerBtn.addEventListener('click', () => {
-  getWorkout('lower');
-});
-
-coreBtn.addEventListener('click', () => {
-  getWorkout('core');
-});
+// Remove old workout when generating new one
+function resetScreen() {
+  main.innerHTML = '';
+}
 
 // List of all upper body exercises with descriptions
 const upperBody = [
   {
-    name: 'Single arm grenade rows',
-    desc: 'Barbell inside the hand grenade hole attached to squat rack',
+    name: 'Single arm landmine rows',
+    desc: 'Barbell inside the landmine hole attached to squat rack',
   },
   {
-    name: 'Hand grenade rows',
-    desc: 'Barbell inside hand grenade hole attached to squat rack. Metal v-grip under bar and straddle the bar to do 2-hand rows',
+    name: 'Landmine rows',
+    desc: 'Barbell inside landmine hole attached to squat rack. Metal v-grip under bar and straddle the bar to do 2-hand rows',
   },
   {
     name: 'TRX pulldowns',
@@ -89,6 +82,62 @@ const upperBody = [
   {
     name: 'Tricep pulldown',
     desc: 'Stand straight up & pull cable down full extension, keeping upper arms not moving and parallel to torso',
+  },
+  {
+    name: 'Seated single arm cable rows',
+    desc: 'Start with palms down then rotate to palms up when pull back',
+  },
+  {
+    name: 'Single arm standing cable row',
+    desc: 'Pull from the low down cables. Can keep shoulder steady or move it back when pulling the cable back',
+  },
+  {
+    name: 'Incline dumbbell bench',
+    desc: 'Incline dumbbell bench',
+  },
+  {
+    name: 'Touching incline dumbbell bench',
+    desc: 'Incline dumbbell bench but hold dumbbells together and go straight up with elbows in',
+  },
+  {
+    name: 'Tricep rope pulldowns',
+    desc: 'Use rope, bar, and/or single arm pulls with cable',
+  },
+  {
+    name: 'Standing single arm dumbbell row',
+    desc: 'Standing up, legs apart, and slightly bent forward',
+  },
+  {
+    name: 'Lat pulldowns',
+    desc: 'Reagular wide grip, reverse narrow grip and/or narrow mixed grip',
+  },
+  {
+    name: 'Close grip lat pulldowns',
+    desc: 'Super close grip using metal handle',
+  },
+  {
+    name: 'Standing cable rows',
+    desc: 'Both arms, stand with knees bent and the cable coming from the floor ones',
+  },
+  {
+    name: 'Kettleball bends',
+    desc: 'Narrow stance, holding kettleball with both hands and knees slightly bent, bend forward keeping back straight until hands are just below knees then come back up',
+  },
+  {
+    name: 'Kettleball off balance bends',
+    desc: 'Narrow stance, one foot on a 5lb plate to slightly elevate it, holding kettleball with both hands and knees slightly bent, bend forward keeping back straight until hands are just below knees then come back up',
+  },
+  {
+    name: 'Mixed grip barbell rows',
+    desc: 'Mixed grip with barbell, standard bent over row position',
+  },
+  {
+    name: 'Reverse band press',
+    desc: 'Band over TRX bar and stand with super long lunge stance and torso bent forward. Do a bench press motion by pulling down with both arms',
+  },
+  {
+    name: 'Wide press machine throws',
+    desc: 'Wide bench press machine, one arm at a time, push out with force to almost throw the weight then catch it and retract',
   },
 ];
 
@@ -186,6 +235,30 @@ const lowerBody = [
     name: 'Ball squats',
     desc: 'Hold medicine ball and do squats, throwing ball up and against wall at top of motion',
   },
+  {
+    name: 'Seated leg press machine',
+    desc: 'Seated leg press machine',
+  },
+  {
+    name: 'Plank cable rows',
+    desc: 'In a plank position, do single arm cable rows',
+  },
+  {
+    name: 'Glute cable pullbacks',
+    desc: "Glute cable pulls machine. It's the machine with leg straps/cables",
+  },
+  {
+    name: 'Side leg pulls',
+    desc: "Glue cable pulls machine. It's the machine with leg straps/cables. Stand perpendicular to machine and pull leg out like a side step or crabwalk",
+  },
+  {
+    name: 'Reverse lunges',
+    desc: 'Reverse lunges holding weights',
+  },
+  {
+    name: 'Dumbbell whole body lifts',
+    desc: 'Wide stance, hips down, then shoot up quickly with dumbbell in one hand using entire body',
+  },
 ];
 
 const coreBody = [
@@ -221,20 +294,102 @@ const coreBody = [
     name: 'torso rotations',
     desc: 'Sit on mat with legs slightly bent and holding weighted ball, lean torso back a bit, rotate torso side to side',
   },
+  {
+    name: 'Torso forward bends',
+    desc: "On knees with hands crossed over chest and feet held down with something, bend forward until can't hold it anymore and push back up with arms",
+  },
+  {
+    name: 'Plank cable ab pulls',
+    desc: 'Put 1 foot in low down cables then get into plank position and pull one leg into chest, switch legs and repeat',
+  },
+  {
+    name: 'Plank ball rolls',
+    desc: 'Plank position with forearms on big rubber ball and legs into a wide V. Move forward and back using forearms and toes',
+  },
+  {
+    name: 'Side plank ball hold',
+    desc: 'Sideways plank positinon on big rubber ball with legs spread into a V. Hold position while keeping torso off ball',
+  },
+  {
+    name: 'Plank cable rows',
+    desc: 'In a plank position, do single arm cable rows',
+  },
+  {
+    name: '',
+    desc: '',
+  },
+  {
+    name: 'Ball plank hold',
+    desc: 'High plank position with feet on big rubber ball. Hold it there',
+  },
+  {
+    name: 'Arm-leg touches',
+    desc: 'Lay on mat on back with arms straight behind head and legs straight out, lift up torso and touch arm to opposite leg, switch and repeat',
+  },
+  {
+    name: 'Plank leg crunch',
+    desc: 'Plank position, bring one knee into chest then back down and alternate legs',
+  },
+  {
+    name: 'Weight plate around the head',
+    desc: 'Hold 35lb plate with hands thru plate holes, keep core engaged, bring weight fully around head then switch directions',
+  },
+  {
+    name: 'Ab/quad/hammies bends',
+    desc: 'Hold plate behind head with knees slightly bent, bend forward with back straight to engage quads and hammies, then back up to engage abs',
+  },
+  {
+    name: 'Plank forearms',
+    desc: 'Start in plank position then go down onto forearms one arm at a time then back up',
+  },
+  {
+    name: 'Plank dumbbell rolls',
+    desc: 'Plank position with a dumbbell, thread arm through the other and pull weight to other side',
+  },
+  {
+    name: 'Plank rows',
+    desc: 'Single arm dumbbell rows in a high plank position',
+  },
+  {
+    name: 'Landmine body lifts',
+    desc: 'Barbell in the landmine hole of squat rack. Start with one foot on ground, other knee on ground. Power lift up with whole body',
+  },
+  {
+    name: 'Reverse crunches',
+    desc: 'Lie on back with legs straight up in the air. Lift legs/hips. If more leverage needed, hold onto something with arms behind head',
+  },
+  {
+    name: 'Power slams with battle ropes',
+    desc: 'Power slams with battle ropes',
+  },
 ];
+
+// Listen for button clicks then activate workout function
+upperBtn.addEventListener('click', () => {
+  resetScreen();
+  getWorkout(upperBody);
+});
+
+lowerBtn.addEventListener('click', () => {
+  resetScreen();
+  getWorkout(lowerBody);
+});
+
+coreBtn.addEventListener('click', () => {
+  resetScreen();
+  getWorkout(coreBody);
+});
 
 // The function that does all the work
 function getWorkout(x) {
-  console.log(x);
+  // Create new array to store selected exercises
+  const chosenExercises = [];
+  // Make copy of original array (the argument variable)
+  const inputArray = x;
+  // Select a random exercise from the copied input array and add to the new array, while also removing that exercise from the copied array  - so it can't be used again. For loop running 5 times and use Math.random & Math.round(down) with the length of the COPIED array to choose an exercise - remember that 1st entry will be 0 not 1
+  // When 5 selected map over workout array and create the HTML elements that will go on page then populate that array onto the page - bold title, regular description
+  //
 }
-
-// Depending on which button selected, cycle thru upper or lower body arrays or core array
-// Randomly grab 5 exercises, not repeating any
-// remove each exercise selected from the array - clone the original array
-// Add each exercises & desc to a new array
-// populate contents of new array on screen as the 5 exercises & their descriptions
-// Click or tap button to reset and generate new workout
-// Exercises names in bold, descriptions not
 
 // generate new favicon package and replace everthing in HTML
 // Make sure content in all head metas updated to reflect url, etc
