@@ -1,4 +1,4 @@
-// Grab the button elements
+// Grab the button & display elements
 const upperBtn = document.querySelector('#upper-btn');
 const lowerBtn = document.querySelector('#lower-btn');
 const coreBtn = document.querySelector('#core-btn');
@@ -364,6 +364,27 @@ const coreBody = [
   },
 ];
 
+// The function that does all the work
+function getWorkout(x) {
+  // Create new array to store selected exercises
+  const chosenExercises = [];
+
+  for (let i = 0; i < 5; i++) {
+    // Randomly choose exercise
+    let exercise = x[Math.floor(Math.random() * x.length)];
+    // No duplicates
+    while (chosenExercises.includes(exercise)) {
+      exercise = x[Math.floor(Math.random() * x.length)];
+    }
+    chosenExercises.push(exercise);
+  }
+  // Populate the final workout to the page
+  const workout = chosenExercises.map(
+    (ex) => `<li><p class="name">${ex.name}</p><p>${ex.desc}</p></li>`
+  );
+  main.innerHTML = workout.join('');
+}
+
 // Listen for button clicks then activate workout function
 upperBtn.addEventListener('click', () => {
   resetScreen();
@@ -379,17 +400,3 @@ coreBtn.addEventListener('click', () => {
   resetScreen();
   getWorkout(coreBody);
 });
-
-// The function that does all the work
-function getWorkout(x) {
-  // Create new array to store selected exercises
-  const chosenExercises = [];
-  // Make copy of original array (the argument variable)
-  const inputArray = x;
-  // Select a random exercise from the copied input array and add to the new array, while also removing that exercise from the copied array  - so it can't be used again. For loop running 5 times and use Math.random & Math.round(down) with the length of the COPIED array to choose an exercise - remember that 1st entry will be 0 not 1
-  // When 5 selected map over workout array and create the HTML elements that will go on page then populate that array onto the page - bold title, regular description
-  //
-}
-
-// generate new favicon package and replace everthing in HTML
-// Make sure content in all head metas updated to reflect url, etc

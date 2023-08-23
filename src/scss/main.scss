@@ -6,6 +6,17 @@
 html {
   box-sizing: border-box;
   font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 *,
@@ -13,6 +24,10 @@ html {
 *:after {
   box-sizing: inherit;
   margin: 0;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 h1 {
@@ -31,12 +46,29 @@ text-align: center;
     color: var(--white);
     cursor: pointer;
   }
-  
-  .upper-btn {
+}
 
+#main {
+  list-style: none;
+  li {
+    margin: 1.5rem;
+    line-height: 1.3rem;
+    .name {
+      font-weight: bold;;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  flex-shrink: 0;
+  padding: 1rem;
+
+  a {
+    text-decoration: none;;
   }
 
-  .lower-btn {
-
-  }
+  a:visited {
+    color: var(--purple);
+  } 
 }

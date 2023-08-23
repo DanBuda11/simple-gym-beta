@@ -6,6 +6,17 @@
 html {
   box-sizing: border-box;
   font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 *,
@@ -13,6 +24,10 @@ html {
 *:after {
   box-sizing: inherit;
   margin: 0;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 h1 {
@@ -30,4 +45,27 @@ h1 {
   border: none;
   color: var(--white);
   cursor: pointer;
+}
+
+#main {
+  list-style: none;
+}
+#main li {
+  margin: 1.5rem;
+  line-height: 1.3rem;
+}
+#main li .name {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  flex-shrink: 0;
+  padding: 1rem;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:visited {
+  color: var(--purple);
 }
