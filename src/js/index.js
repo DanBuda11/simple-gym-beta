@@ -139,6 +139,98 @@ const upperBody = [
     name: 'Wide press machine throws',
     desc: 'Wide bench press machine, one arm at a time, push out with force to almost throw the weight then catch it and retract',
   },
+  {
+    name: 'Dumbbell shoulder press',
+    desc: 'Single arm, waist-wide stance, other arm straight out, lift dumbbell straight up keeping forearm perpendicular to floor and come down to arm at 90 degree angle to body',
+  },
+  {
+    name: 'Barbell shoulder press',
+    desc: 'Hold barbell in front of top of chest and lift straight up with full extension',
+  },
+  {
+    name: 'Resistance rows',
+    desc: 'In a long lunge stance, single arm rows with a resitance band around the dumbbell and something static',
+  },
+  {
+    name: 'Hammer strength machine lat pulldowns',
+    desc: 'hammer strength machine with a narrow grip that is kind of like lat pulldowns',
+  },
+  {
+    name: 'Hammer strength lats delts',
+    desc: 'Hammer strength machine that is between lat and delt pulldowns',
+  },
+  {
+    name: 'Cable chest flys',
+    desc: 'Long lunge stance, using cable machine, both arm chest flys',
+  },
+  {
+    name: 'Single arm chest punches',
+    desc: 'Long lunge stance, using cable machine, pull cable forward almost like punching straight ahead',
+  },
+  {
+    name: 'Single arm rotating rows',
+    desc: 'Seated, single arm rows, starting with palm down then rotate to palm up when pulling back, squeezing back muscles and rotating torso back along with arm',
+  },
+  {
+    name: 'Double arm rows',
+    desc: 'Seated, double arm rows, starting with palms down then rotating to palms up when pulling back',
+  },
+  {
+    name: 'Single arm knee pulldowns',
+    desc: 'On one knee, single arm cable pulldowns coming down close to torso',
+  },
+  {
+    name: 'Pyramid back squeeze',
+    desc: 'Lay on back on flat bench with band around wrists and hand together all the way up, come down slowly widening arms apart and squeeze back muscles at the bottom then go back up, basically a pyramid up and down',
+  },
+  {
+    name: 'Resistance pushups',
+    desc: 'Pushups with a band around hands and wrapping around back',
+  },
+  {
+    name: 'Incline Y Dumbbell Back Press',
+    desc: 'On a slightly inclined bench with chest facing down, hold dumbbells with thumbs over their ends, squeeze tenderloins then lift arms straight up into a Y shape, release tension at bottom of motion then go again',
+  },
+  {
+    name: 'Incline back flys',
+    desc: 'On a slightly inclined bench with chest facing down, back dumbbell flys',
+  },
+  {
+    name: 'Decline bench throws',
+    desc: 'On a decline bench machine, throws the weights out instead of just pushing them, alternate arms or do one arm first then the other',
+  },
+  {
+    name: 'Bench throws',
+    desc: 'On flat bench press machine that has the cable and the bar is hooked to the pegs until you lift it off, throw weights out instead of just pushing them',
+  },
+  {
+    name: 'Battle rope slams',
+    desc: '2-hand battle rope full body slams',
+  },
+  {
+    name: 'Battle rope alternating slams',
+    desc: 'Alternate slamming battle ropes with each arm',
+  },
+  {
+    name: 'Battle rope lateral crosses',
+    desc: 'Hold battle ropes and swing side to side crossing ropes over/under each other',
+  },
+  {
+    name: 'TRX bicep curls',
+    desc: 'Palms up, use TRX rope to curl as if trying to put knuckles on top of head',
+  },
+  {
+    name: 'Standing lat pulldowns',
+    desc: 'In same position as a cable tri pulldown with a bar attachment, but keep arms completely straight as you come down to activate lats',
+  },
+  {
+    name: 'Standing lat rope pulldowns',
+    desc: 'In same position as a cable tri pulldown with a rope attachment, but keep arms completely straight as you come down to activate lats',
+  },
+  {
+    name: 'Behind the neck lat pulldowns',
+    desc: 'Using machine called behind the neck pulldowns, either single or double arm pulldowns',
+  },
 ];
 
 // List of all lower body exercises with descriptions
@@ -259,6 +351,26 @@ const lowerBody = [
     name: 'Dumbbell whole body lifts',
     desc: 'Wide stance, hips down, then shoot up quickly with dumbbell in one hand using entire body',
   },
+  {
+    name: 'Box step ups',
+    desc: 'Step up on box, alternating legs, with or without holding dumbbells in one or both hands',
+  },
+  {
+    name: 'Landmine bar squats',
+    desc: 'With bar in landmine, hold with both hands, go down into squat position then all the way up on toes',
+  },
+  {
+    name: 'Resistance front lunges',
+    desc: 'Resistance band around waist, holding dumbbell or dumbbells, lunge forward then back up into starting position',
+  },
+  {
+    name: 'TRX kettleball lunges',
+    desc: 'Holding TRX ropes with one hand and kettleball in the other, do lunges/split squats',
+  },
+  {
+    name: 'Alternate box calf raises',
+    desc: 'Stand on box then go up with both feet but then back down with only one foot, alternate feet',
+  },
 ];
 
 const coreBody = [
@@ -315,8 +427,8 @@ const coreBody = [
     desc: 'In a plank position, do single arm cable rows',
   },
   {
-    name: '',
-    desc: '',
+    name: 'TRX supermans',
+    desc: 'On knees, do superman extensions using TRX ropes',
   },
   {
     name: 'Ball plank hold',
@@ -361,6 +473,30 @@ const coreBody = [
   {
     name: 'Power slams with battle ropes',
     desc: 'Power slams with battle ropes',
+  },
+  {
+    name: 'TRX chest crunches',
+    desc: 'Face down, feet off ground in TRX straps, in plank position, crunch both legs into chest',
+  },
+  {
+    name: 'TRX leg swings',
+    desc: 'Face down, feet off ground in TRX straps, in plank position, swing both knees out to right then left',
+  },
+  {
+    name: 'Ball obliques',
+    desc: 'Shoulders resting on big blue ball and dumbbell held straight out with both arms, oblique to the left and right by rolling side to side, keeping arms straight out',
+  },
+  {
+    name: 'Resistance crunches',
+    desc: 'Single leg crunch with leg in strap of resistance band',
+  },
+  {
+    name: 'Rubber ball crunches',
+    desc: 'Feet up on big rubber ball laying on back and crunch legs in then back out',
+  },
+  {
+    name: 'Battle rope plank slams',
+    desc: 'High plank position, hold battle rope with one arm with other holding you up, slam the battle rope then switch arms',
   },
 ];
 
