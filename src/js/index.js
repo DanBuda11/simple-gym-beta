@@ -231,6 +231,26 @@ const upperBody = [
     name: 'Behind the neck lat pulldowns',
     desc: 'Using machine called behind the neck pulldowns, either single or double arm pulldowns',
   },
+  {
+    name: 'Alternating cable rows & curls',
+    desc: 'Using cable that comes from the floor, alternate sets of bicep curls and rows',
+  },
+  {
+    name: 'Pyramid dumbbell rows',
+    desc: 'Ass out, back straight but angled forward, elbows in, do sets with reps of 8-10-12-12-10-8',
+  },
+  {
+    name: 'Alternate arm cable chest pulls',
+    desc: 'Stand with tailbone against cushion of seated cable pull machine and alternate pulling arms across body',
+  },
+  {
+    name: 'Incline bench drop sets - elbows in',
+    desc: 'Start with higher weight then lower each set, single arm or both at same time, keep elbows tucked in for the whole motion',
+  },
+  {
+    name: 'Incline bench drop sets',
+    desc: 'Start with higher weight then lower each set, single arm or both at same time, regular incline press motion',
+  },
 ];
 
 // List of all lower body exercises with descriptions
@@ -497,6 +517,82 @@ const coreBody = [
   {
     name: 'Battle rope plank slams',
     desc: 'High plank position, hold battle rope with one arm with other holding you up, slam the battle rope then switch arms',
+  },
+  {
+    name: 'Attach band to something at chest level then stand perpendiculat to band and grip with both hands, knees bent a bit, push arms straight out from body using core to stabilize then switch sides and do other direction',
+    desc: '',
+  },
+  {
+    name: 'Attach band to something at chest level then stand perpendicular to band and grip with both hands, knees bent a bit, pull arms away from attached end of band to do a side rotation then switch sides',
+    desc: '',
+  },
+];
+
+// Warm up exercises not currently used
+const warmups = [
+  {
+    name: 'Side walks',
+    desc: 'Band around ankles and side step, then back step 45 degree angle, then back step straight back',
+  },
+  {
+    name: 'Arm pull aparts',
+    desc: 'Short band around wrists with arms low, then pull apart, then repeat with arms at chest level then again higher up but not directly over head',
+  },
+  {
+    name: 'Active warmups',
+    desc: 'High leg kicks, quad grabs, front leg grabs, side shuffles, side lunges, high knees, ass kicks',
+  },
+  {
+    name: 'Block step ups',
+    desc: 'Step ups onto a block',
+  },
+  {
+    name: 'Band leg pull aparts',
+    desc: 'Band around ankles and using wall for support, 1 foot off ground with knees slightly bent, pull leg that is off the ground sideways away from other leg then back in',
+  },
+  {
+    name: 'Torso lunges',
+    desc: 'Alternate leg forward lunges and rotate torse at bottom of movement toward the front leg',
+  },
+];
+
+// Cardio exercises not currently used
+const cardio = [
+  {
+    name: 'Ski-Erg',
+    desc: 'A few minutes full body motion',
+  },
+  {
+    name: 'Run laps',
+    desc: 'Run laps',
+  },
+  {
+    name: 'Half court sprints',
+    desc: 'Half court sprints',
+  },
+  {
+    name: 'Standing bike',
+    desc: "Exercise bike but stand up, don't sit on seat",
+  },
+  {
+    name: 'Lateral X machine',
+    desc: 'Can do this post-workout for 10-15 minutes',
+  },
+];
+
+// Circuit workouts not currently used
+const circuits = [
+  {
+    name: 'Lower Circuit 1',
+    desc: 'Romanian lunges, squat while tossing medicine ball straight up, alternate leg jump lunges with front foot slightly elevated on a small block',
+  },
+  {
+    name: 'Lower Circuit 2',
+    desc: 'Pull sled walking backward with arms locked at 90 degrees, back step lunges with front foot slightly elevated on block, hold TRX ropes into a plank then alternate lifting legs up and out',
+  },
+  {
+    name: 'Upper Circuit 1',
+    desc: '"Superman take off" on machine, dumbbell bench press, TRX ropes pulling up into a W shape',
   },
 ];
 
