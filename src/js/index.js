@@ -519,12 +519,12 @@ const coreBody = [
     desc: 'High plank position, hold battle rope with one arm with other holding you up, slam the battle rope then switch arms',
   },
   {
-    name: 'Attach band to something at chest level then stand perpendiculat to band and grip with both hands, knees bent a bit, push arms straight out from body using core to stabilize then switch sides and do other direction',
-    desc: '',
+    name: 'Standing core arm extensions',
+    desc: 'Attach band to something at chest level then stand perpendicular to band and grip with both hands, knees bent a bit, push arms straight out from body using core to stabilize then switch sides and do other direction',
   },
   {
-    name: 'Attach band to something at chest level then stand perpendicular to band and grip with both hands, knees bent a bit, pull arms away from attached end of band to do a side rotation then switch sides',
-    desc: '',
+    name: 'Standing core torso twists',
+    desc: 'Attach band to something at chest level then stand perpendicular to band and grip with both hands, knees bent a bit, pull arms away from attached end of band to do a side rotation then switch sides',
   },
 ];
 
