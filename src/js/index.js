@@ -251,6 +251,10 @@ const upperBody = [
     name: 'Incline bench drop sets',
     desc: 'Start with higher weight then lower each set, single arm or both at same time, regular incline press motion',
   },
+  {
+    name: 'Kettlebell lat raises',
+    desc: 'Holding kettlebell, do lat raises making sure elbows up',
+  },
 ];
 
 // List of all lower body exercises with descriptions
@@ -390,6 +394,26 @@ const lowerBody = [
   {
     name: 'Alternate box calf raises',
     desc: 'Stand on box then go up with both feet but then back down with only one foot, alternate feet',
+  },
+  {
+    name: 'Back lunges on box',
+    desc: 'Holding dumbbells and with 1 foot up on a box and the other foot back, do downward lunges then switch front/back feet',
+  },
+  {
+    name: 'Hack squat',
+    desc: 'Hack squat machine',
+  },
+  {
+    name: 'Kettlebell swings',
+    desc: 'Holding kettlebell between legs, swing forward and up focusing on hip flexors for power',
+  },
+  {
+    name: 'Kettlebell swings on boxes',
+    desc: 'With feet apart and up on boxes, hold kettlebell with both hands and drive up in squat position, keeping hips low on the downward motion',
+  },
+  {
+    name: 'Kettlebell box lunges',
+    desc: 'With a kettlebell resting on one shoulder and the opposite side foot forward and on a box, do back lunges in place then switch legs',
   },
 ];
 
