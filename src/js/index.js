@@ -16,6 +16,10 @@ const upperBody = [
     desc: 'Barbell inside the landmine hole attached to squat rack',
   },
   {
+    name: 'Skull crushers',
+    desc: 'Lying on bench, holding end of dumbbell with both hands and arms above head, bring arms back behind head and stretch down as far back/down as is comfortable then bring arms back up over head',
+  },
+  {
     name: 'Landmine rows',
     desc: 'Barbell inside landmine hole attached to squat rack. Metal v-grip under bar and straddle the bar to do 2-hand rows',
   },
@@ -161,7 +165,7 @@ const upperBody = [
   },
   {
     name: 'Cable chest flys',
-    desc: 'Long lunge stance, using cable machine, both arm chest flys',
+    desc: 'Long lunge stance, using cable machine, both arm chest flys. Alternative is to bend forward so the forward pulling motion is down instead of straight out',
   },
   {
     name: 'Single arm chest punches',
