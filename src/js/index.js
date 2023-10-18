@@ -400,8 +400,20 @@ const lowerBody = [
     desc: 'Stand on box then go up with both feet but then back down with only one foot, alternate feet',
   },
   {
+    name: 'Barbell calf raises',
+    desc: 'Using barbell on shoulders in squat box, do calf raises',
+  },
+  {
+    name: 'Leg press calf raises',
+    desc: 'Calf raises using the horizontal leg press machine. Extend legs mostly straight out and push back to do calf raises',
+  },
+  {
     name: 'Back lunges on box',
     desc: 'Holding dumbbells and with 1 foot up on a box and the other foot back, do downward lunges then switch front/back feet',
+  },
+  {
+    name: 'Kettlebell calf raises',
+    desc: 'With kettlebell held on one shoulder and leg under kettlebell off the ground, hold onto something with opposite arm and do single-foot calf raises',
   },
   {
     name: 'Hack squat',
@@ -425,6 +437,18 @@ const coreBody = [
   {
     name: 'Ab wheel',
     desc: 'Use ab wheel to roll out and back in, keeping back straight and extending arms out fully',
+  },
+  {
+    name: 'Get into high plank position with hands on a barbell with 45 pound plates. Stating in high plank, push the barbell forward across a length of space using feet, keeping only toes on the floor',
+    desc: '',
+  },
+  {
+    name: 'Raised kettlebell walks',
+    desc: 'Hold a kettlebell straight up overhead with arm fully extended. Walk without locking knees and fully extending lat. Repeat opposite side',
+  },
+  {
+    name: 'Barbell assisted leg raises',
+    desc: 'Lie on back and hold barbell with 45 pound plates directly above chest with arms extended. Keeping legs as straight as possible, lift legs up and then back down',
   },
   {
     name: 'High plank shoulder touches',
