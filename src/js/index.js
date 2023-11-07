@@ -16,6 +16,34 @@ const upperBody = [
     desc: 'Barbell inside the landmine hole attached to squat rack',
   },
   {
+    name: 'Gorilla rows',
+    desc: 'Wide stance and a kettlebell under each arm, lean back onto heels and alternate lifting each kettlebell, in a stance like a gorilla',
+  },
+  {
+    name: 'Rotating dumbbell rows',
+    desc: 'Narrow stance, holding dumbbells down with ends facing each other, raise arms up to do a row with dumbbells, rotating them 90 degrees at the top',
+  },
+  {
+    name: 'Split stance dumbbell bicep curls',
+    desc: 'With the toes of one foot lining up with the heel of the other, to help keep chest forward and not cheat by swinging, do bicep curls',
+  },
+  {
+    name: 'Split stance dumbbell hammer curls',
+    desc: 'With the toes of one foot lining up with the heel of the other, to help keep chest forward and not cheat by swinging, do hammer curls',
+  },
+  {
+    name: 'Wide stance overhand barbell rows',
+    desc: 'Standing with a wide stance, do rows using a wide (hands past the hips) overhand grip',
+  },
+  {
+    name: 'Narrow stance overhand barbell rows',
+    desc: 'Standing with a narrow stance and a narrow grip, do rows using an overhand grip',
+  },
+  {
+    name: 'Wide stance underhand barbell rows',
+    desc: 'Standing with a wide stance, do rows with an underhand grip where arms come up inside the legs',
+  },
+  {
     name: 'Skull crushers',
     desc: 'Lying on bench, holding end of dumbbell with both hands and arms above head, bring arms back behind head and stretch down as far back/down as is comfortable then bring arms back up over head',
   },
@@ -439,8 +467,8 @@ const coreBody = [
     desc: 'Use ab wheel to roll out and back in, keeping back straight and extending arms out fully',
   },
   {
-    name: 'Get into high plank position with hands on a barbell with 45 pound plates. Stating in high plank, push the barbell forward across a length of space using feet, keeping only toes on the floor',
-    desc: '',
+    name: 'Barbell plank push',
+    desc: 'Get into high plank position with hands on a barbell with 45 pound plates. Starting in high plank, push the barbell forward across a length of space using feet, keeping only toes on the floor',
   },
   {
     name: 'Raised kettlebell walks',
@@ -664,7 +692,7 @@ function getWorkout(x) {
   }
   // Populate the final workout to the page
   const workout = chosenExercises.map(
-    (ex) => `<li><p class="name">${ex.name}</p><p>${ex.desc}</p></li>`
+    (ex) => `<li><p class="name">${ex.name}</p><p>${ex.desc}</p></li>`,
   );
   main.innerHTML = workout.join('');
 }
