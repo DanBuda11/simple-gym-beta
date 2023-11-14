@@ -38,6 +38,7 @@ h1 {
   display: flex;
   justify-content: space-evenly;
 }
+
 .buttons button {
   border-radius: 10px;
   padding: 0.6rem;
@@ -51,10 +52,12 @@ h1 {
   list-style: none;
   padding: 0;
 }
+
 #main li {
   margin: 1.5rem 2.5rem;
   line-height: 1.3rem;
 }
+
 #main li .name {
   font-weight: bold;
 }
@@ -64,9 +67,11 @@ footer {
   flex-shrink: 0;
   padding: 1rem 1rem 2rem;
 }
+
 footer a {
   text-decoration: none;
 }
+
 footer a:visited {
   color: var(--purple);
 }
