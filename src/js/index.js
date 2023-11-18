@@ -467,6 +467,22 @@ const coreBody = [
     desc: 'Use ab wheel to roll out and back in, keeping back straight and extending arms out fully',
   },
   {
+    name: 'Big ball ab rolls',
+    desc: 'With forearms on a big ball and legs in a wide stance, roll slightly forward and back on ball with abs, but not legs, keeping feet planted in place',
+  },
+  {
+    name: 'Ball slams on 1 knee',
+    desc: 'Down on 1 knee, with forward leg slightly out at an angle, do power ball slams',
+  },
+  {
+    name: '90 degree leg lowers',
+    desc: 'Lie on back holding dumbbells above with arms straight up. Bend legs 90 degress then lower them down while straigtening them out',
+  },
+  {
+    name: 'TRX reverse mountain climbers',
+    desc: 'Lie on back and put TRX straps on heels. Raise hips and crunch legs in. Can do both legs at once or alternate legs',
+  },
+  {
     name: 'Barbell plank push',
     desc: 'Get into high plank position with hands on a barbell with 45 pound plates. Starting in high plank, push the barbell forward across a length of space using feet, keeping only toes on the floor',
   },
