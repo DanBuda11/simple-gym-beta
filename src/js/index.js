@@ -344,6 +344,10 @@ const lowerBody = [
     desc: 'Sumo squats on boxes for more range of motion',
   },
   {
+    name: 'Lateral side lunges',
+    desc: 'With weighted bag on shoulders, step out and lunge to one side, then bring that foot back in and immediately lunge out with the other leg.',
+  },
+  {
     name: 'Band side steps',
     desc: 'Band around ankles, crab walk one way then the other',
   },
