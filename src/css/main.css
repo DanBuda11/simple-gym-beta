@@ -1,6 +1,6 @@
 :root {
-  --purple: #3F04BB;
-  --white: #FFF;
+  --purple: #3f04bb;
+  --white: #fff;
 }
 
 html {
@@ -10,7 +10,8 @@ html {
   margin: 0 auto;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
