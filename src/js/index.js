@@ -208,6 +208,14 @@ const upperBody = [
     desc: 'Seated, double arm rows, starting with palms down then rotating to palms up when pulling back',
   },
   {
+    name: 'Landmine parallel rows',
+    desc: 'Standing alongside landmine bar, single arm rows while standing in a lunge position',
+  },
+  {
+    name: 'Landmine perpendicular rows',
+    desc: 'Standing perpendicular to landmine bar, grab end of bar with one hand with top of hand facing front. Bend slightly and do single arm rows',
+  },
+  {
     name: 'Single arm knee pulldowns',
     desc: 'On one knee, single arm cable pulldowns coming down close to torso',
   },
@@ -294,6 +302,14 @@ const lowerBody = [
   {
     name: 'Close grip barbell deadlift',
     desc: 'Make sure to roll shoulders back at the top',
+  },
+  {
+    name: 'Lateral landmine lunges',
+    desc: 'Stand directly in front of landmine bar and grip with both hands, holding bar at chest level, lunge out to one side then return leg to center, repeat with opposite leg',
+  },
+  {
+    name: 'Landmine reverse lunges',
+    desc: 'Stand directly in front of landmine bar, holding with both hands at chest level. Reverse lunges from this position',
   },
   {
     name: 'Wide stance sumo deadlift',
