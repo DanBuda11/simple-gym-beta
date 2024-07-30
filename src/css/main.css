@@ -46,7 +46,47 @@ h1 {
     border: none;
     color: var(--white);
     cursor: pointer;
+    touch-action: manipulation;
   }
+}
+
+#warmup-btn {
+  color: var(--purple);
+  background-color: var(--white);
+  border: none;
+  display: flex;
+  cursor: pointer;
+  touch-action: manipulation;
+  padding-left: 0;
+  margin: 1.5rem 2.5rem;
+}
+
+.warmup-arrow {
+  margin-right: 5px;
+  width: 20px;
+}
+
+.warmup-list {
+  list-style: none;
+  padding: 0;
+
+  & li {
+    margin: 1.5rem 2.5rem;
+    line-height: 1.3rem;
+
+    .warmup-title {
+      font-weight: bold;
+    }
+  }
+
+  .warmup-last {
+    border-bottom: 1px solid var(--purple);
+    padding-bottom: 1.5rem;
+  }
+}
+
+.hide-warmups {
+  display: none;
 }
 
 #main {
