@@ -306,10 +306,6 @@ const legs = [
     desc: 'Walking lunges or step back to starting position and switch legs',
   },
   {
-    name: 'Elevated sumo squats',
-    desc: 'Sumo squats on boxes for more range of motion',
-  },
-  {
     name: 'Split squats bent',
     desc: 'Split squats with torso bent slightly forward to work glutes more',
   },
