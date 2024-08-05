@@ -148,11 +148,6 @@ const back = [
     desc: 'Hold barbell in front of top of chest and lift straight up with full extension',
   },
   {
-    name: 'Resistance rows',
-    desc: 'In a long lunge stance, single arm rows with a resitance band around the dumbbell and something static',
-  },
-
-  {
     name: 'Single arm rotating rows',
     desc: 'Seated, single arm rows, starting with palm down then rotate to palm up when pulling back, squeezing back muscles and rotating torso back along with arm',
   },
@@ -234,7 +229,7 @@ const back = [
   },
   {
     name: 'Pyramid back squeeze',
-    desc: 'Lay on back on flat bench with band around wrists and hand together all the way up, come down slowly widening arms apart and squeeze back muscles at the bottom then go back up, basically a pyramid up and down',
+    desc: 'Lay on back on flat bench with band around wrists and hands together all the way up, come down slowly widening arms apart and squeeze back muscles at the bottom then go back up, basically a pyramid up and down',
   },
 
   {
