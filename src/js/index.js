@@ -498,7 +498,7 @@ const core = [
   },
   {
     name: 'Weight plate around the head',
-    desc: 'Hold 35lb plate with hands thru plate holes, keep core engaged, bring weight fully around head then switch directions',
+    desc: 'Hold weight plate with hands thru plate holes, keep core engaged, bring weight fully around head then switch directions',
   },
   {
     name: 'Ab/quad/hammies bends',
