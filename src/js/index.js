@@ -96,24 +96,12 @@ const back = [
     desc: 'Narrow stance, holding dumbbells down with ends facing each other, raise arms up to do a row with dumbbells, rotating them 90 degrees at the top',
   },
   {
-    name: 'Pyramid dumbbell rows',
-    desc: 'Ass out, back straight but angled forward, elbows in, do sets with reps of 8-10-12-12-10-8',
-  },
-  {
-    name: 'Wide stance overhand barbell rows',
-    desc: 'Standing with a wide stance, do rows using a wide (hands past the hips) overhand grip',
+    name: 'Wide stance barbell rows',
+    desc: 'Standing with a wide stance, do rows using a wide (hands past the hips) overhand or underhand grip',
   },
   {
     name: 'Narrow stance overhand barbell rows',
     desc: 'Standing with a narrow stance and a narrow grip, do rows using an overhand grip',
-  },
-  {
-    name: 'Wide stance underhand barbell rows',
-    desc: 'Standing with a wide stance, do rows with an underhand grip where arms come up inside the legs',
-  },
-  {
-    name: 'Standing single arm dumbbell row',
-    desc: 'Standing up, legs apart, and slightly bent forward',
   },
   {
     name: 'Lat pulldowns',
@@ -148,16 +136,8 @@ const back = [
     desc: 'Hold barbell in front of top of chest and lift straight up with full extension',
   },
   {
-    name: 'Single arm rotating rows',
-    desc: 'Seated, single arm rows, starting with palm down then rotate to palm up when pulling back, squeezing back muscles and rotating torso back along with arm',
-  },
-  {
-    name: 'Double arm rows',
-    desc: 'Seated, double arm rows, starting with palms down then rotating to palms up when pulling back',
-  },
-  {
-    name: 'Landmine parallel rows',
-    desc: 'Standing alongside landmine bar, single arm rows while standing in a lunge position',
+    name: 'Seated rotating rows',
+    desc: 'Seated, single or double arm rows, starting with palm down then rotate to palm up when pulling back, squeezing back muscles.',
   },
   {
     name: 'Landmine perpendicular rows',
@@ -176,8 +156,8 @@ const back = [
     desc: 'Lean back at an angle and pull body up with arms going out into a W shape',
   },
   {
-    name: 'Close grip rope rows',
-    desc: 'Using cable rope attachment and in a quasi seated stance with back straight up',
+    name: 'Close grip rows',
+    desc: 'Using V or rope attachment and in a quasi seated stance with back straight up',
   },
   {
     name: 'Super close grip rows',
@@ -185,10 +165,6 @@ const back = [
   },
   {
     name: 'Single arm bent over rows',
-    desc: 'Staggered stance front/back legs, flat back, pull straight up',
-  },
-  {
-    name: 'Single arm bent over rows 2',
     desc: 'Feet close together, back bent and flat, pull up keeping elbows in, turn dumbbell from wide at the bottom to long at the top',
   },
   {
@@ -198,10 +174,6 @@ const back = [
   {
     name: 'TRX bicep curls',
     desc: 'Palms up, use TRX rope to curl as if trying to put knuckles on top of head',
-  },
-  {
-    name: 'Mixed grip barbell rows',
-    desc: 'Mixed grip with barbell, standard bent over row position',
   },
   {
     name: 'Single arm knee pulldowns',
@@ -214,14 +186,6 @@ const back = [
   {
     name: 'Standing lat rope pulldowns',
     desc: 'In same position as a cable tri pulldown with a rope attachment, but keep arms completely straight as you come down to activate lats',
-  },
-  {
-    name: 'Close grip cable rows',
-    desc: 'Machine cable rows, come toward body either high or low',
-  },
-  {
-    name: 'Seated single arm cable rows',
-    desc: 'Start with palms down then rotate to palms up when pull back',
   },
   {
     name: 'Single arm standing cable row',
@@ -255,10 +219,6 @@ const back = [
   {
     name: 'Battle rope lateral crosses',
     desc: 'Hold battle ropes and swing side to side crossing ropes over/under each other',
-  },
-  {
-    name: 'Alternating cable rows & curls',
-    desc: 'Using cable that comes from the floor, alternate sets of bicep curls and rows',
   },
   {
     name: 'Kettlebell lat raises',
