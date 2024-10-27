@@ -20,6 +20,14 @@ const chest = [
     desc: 'Lying on bench, holding end of dumbbell with both hands and arms above head, bring arms back behind head and stretch down as far back/down as is comfortable then bring arms back up over head',
   },
   {
+    name: 'Bench press',
+    desc: 'Bench press with either barbell or dumbbells',
+  },
+  {
+    name: 'Decline bench press',
+    desc: 'Decline bench press with either barbell or dumbbells',
+  },
+  {
     name: 'Tricep dumbbell kickbacks',
     desc: 'Bent over staggered stance similar to single arm rows, keep elbow parallel to torso, full extension forward and back',
   },
@@ -44,8 +52,8 @@ const chest = [
     desc: 'Single arm chest fly on cable machine, put ass into back of seat',
   },
   {
-    name: 'Incline dumbbell bench',
-    desc: 'Incline dumbbell bench',
+    name: 'Incline bench',
+    desc: 'Incline bench using barbell or dumbbells',
   },
   {
     name: 'Touching incline dumbbell bench',
@@ -86,6 +94,14 @@ const back = [
   {
     name: 'Landmine rows',
     desc: 'Barbell inside landmine hole attached to squat rack. Metal v-grip under bar and straddle the bar to do 2-hand rows',
+  },
+  {
+    name: 'Front delt raises',
+    desc: 'Using dumbbells, stand straight up with legs at hip width. With palms facing forward, alternate lifting each arm straight up & forward until parallel with the floor',
+  },
+  {
+    name: '',
+    desc: '',
   },
   {
     name: 'Staggered stance dumbbell rows',
