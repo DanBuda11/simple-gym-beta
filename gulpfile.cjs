@@ -97,9 +97,20 @@ function serve(cb) {
   cb();
 }
 
-// Example of dynamically importing an ESM module (optional)
 async function dynamicESMTask() {
-  const mod = await import(new URL('./scripts/build.mjs', import.meta.url));
+  // Add these two requires at the top of the function (or top of file)
+  const { pathToFileURL } = require('url');
+  const path = require('path');
+
+  // Build a file:// URL for your ESM module
+  const scriptUrl = pathToFileURL(
+    path.join(__dirname, 'scripts', 'build.mjs'),
+  ).href;
+
+  // Dynamically import the ESM module
+  const mod = await import(scriptUrl);
+
+  // Call the build function inside the ESM module
   return mod.build();
 }
 
