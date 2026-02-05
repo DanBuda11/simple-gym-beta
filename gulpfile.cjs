@@ -99,7 +99,7 @@ function serve(cb) {
 
 // Example of dynamically importing an ESM module (optional)
 async function dynamicESMTask() {
-  const mod = await import('./scripts/build.mjs');
+  const mod = await import(new URL('./scripts/build.mjs', import.meta.url));
   return mod.build();
 }
 
