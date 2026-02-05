@@ -7,7 +7,7 @@
   "description": "Dan Buda's Simple Workout App",
   "main": "index.js",
   "scripts": {
-    "build": "npx gulp build"
+    "build": "npx gulp --gulpfile ./gulpfile.cjs build"
   },
   "keywords": [],
   "author": "Dan Buda",
