@@ -1,14 +1,15 @@
 {
-  "name": "simple-gym",
+  "name": "simple-gym-beta",
   "version": "2.1.4",
   "engines": {
-    "node": ">=20.18.3"
+    "node": "24.x"
   },
   "description": "Dan Buda's Simple Workout App",
-  "main": "index.js",
   "scripts": {
-    "build": "npx gulp --gulpfile ./gulpfile.cjs build"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+},
   "keywords": [],
   "author": "Dan Buda",
   "repository": {
@@ -51,6 +52,7 @@
     "gulp-cli": "^3.1.0",
     "prettier": "^3.8.1",
     "stylelint": "^16.26.1",
-    "stylelint-config-standard": "^36.0.1"
+    "stylelint-config-standard": "^36.0.1",
+    "vite": "^8.1.5"
   }
 }
