@@ -5,11 +5,12 @@
     "node": "24.x"
   },
   "description": "Dan Buda's Simple Workout App",
+  "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-},
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "keywords": [],
   "author": "Dan Buda",
   "repository": {
@@ -18,14 +19,13 @@
   },
   "license": "ISC",
   "browserslist": [
-    "> 0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions"
   ],
   "dependencies": {
     "@babel/core": "^7.29.0",
-    "@babel/eslint-parser": "^7.28.6",
     "@babel/preset-env": "^7.29.0",
     "autoprefixer": "^10.4.24",
     "del": "^7.1.0",
@@ -44,11 +44,6 @@
   "devDependencies": {
     "browser-sync": "^3.0.4",
     "eslint": "^8.57.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^9.1.2",
-    "eslint-plugin-html": "^8.1.4",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-prettier": "^5.5.5",
     "gulp-cli": "^3.1.0",
     "prettier": "^3.8.1",
     "stylelint": "^16.26.1",

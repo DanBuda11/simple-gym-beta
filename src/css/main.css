@@ -74,16 +74,17 @@ h1 {
     margin: 1.5rem 2.5rem;
     line-height: 1.3rem;
 
-    .warmup-title {
+    & .warmup-title {
       font-weight: bold;
     }
   }
 
-  .warmup-last {
+  & .warmup-last {
     border-bottom: 1px solid var(--purple);
     padding-bottom: 1.5rem;
   }
 }
+
 
 .hide-warmups {
   display: none;
@@ -97,7 +98,7 @@ h1 {
     margin: 1.5rem 2.5rem;
     line-height: 1.3rem;
 
-    .name {
+    & .name {
       font-weight: bold;
     }
   }
