@@ -1,3 +1,6 @@
+import './css/normalize.css';
+import './css/main.css';
+
 // Grab the button & display elements
 const chestBtn = document.querySelector('#chest-btn');
 const backBtn = document.querySelector('#back-btn');
