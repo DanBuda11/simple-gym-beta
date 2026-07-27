@@ -16,7 +16,21 @@
     "stylelint:fix": "stylelint \"src/**/*.css\" --fix",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
-    "check": "pnpm format:check && pnpm lint && pnpm stylelint && pnpm build"
+    "check": "pnpm format:check && pnpm lint && pnpm stylelint && pnpm build",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "**/*.css": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{html,json,md,yaml,yml}": [
+      "prettier --write"
+    ]
   },
   "keywords": [],
   "author": "Dan Buda",
@@ -33,6 +47,8 @@
   ],
   "devDependencies": {
     "eslint": "^10.8.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.2.0",
     "prettier": "^3.8.1",
     "stylelint": "^17.14.1",
     "stylelint-config-recommended": "^18.0.0",
